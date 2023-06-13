@@ -1,6 +1,7 @@
 import Home from "./index";
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import userEvent from '@testing-library/user-event';
 
 describe('Weather App', () => {
     it('should have a title', () => {
@@ -25,6 +26,16 @@ describe('Weather App', () => {
         render(<Home />)
 
         expect(screen.getByRole('button')).toBeInTheDocument()
+    })
+
+
+    it('should display entered town when button pressed', () => {
+        render(<Home />)
+
+        userEvent.type(screen.queryByText('Enter Town'), 'Manchester')
+        userEvent.click(screen.getByText('Go'));
+
+        expect(screen.getByText('Manchester')).toBeInTheDocument();
     })
 
 });
