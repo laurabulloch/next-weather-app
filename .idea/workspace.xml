@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Jest.Weather App">
+  <component name="RunManager" selected="Jest.Weather App.should display entered town when button pressed">
     <configuration name="Weather App" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -65,6 +64,20 @@
       <test-file value="$PROJECT_DIR$/pages/index.test.js" />
       <test-names>
         <test-name value="Weather App" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Weather App.should display entered town when button pressed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/pages/index.test.js" />
+      <test-names>
+        <test-name value="Weather App" />
+        <test-name value="should display entered town when button pressed" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -98,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Weather App.should display entered town when button pressed" />
+        <item itemvalue="Jest.Weather App" />
+        <item itemvalue="Jest.Weather App.should display input box" />
         <item itemvalue="Jest.Weather App.should have a title" />
-        <item itemvalue="Jest.Weather App.should display input box" />
         <item itemvalue="Jest.Weather App" />
-        <item itemvalue="Jest.Weather App" />
-        <item itemvalue="Jest.Weather App.should display input box" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686652539622</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test for displaying entered town">
+      <created>1686655025257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686655025257</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +169,7 @@
     <MESSAGE value="added jest configs" />
     <MESSAGE value="add tests for UI components" />
     <MESSAGE value="added ESLint" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ESLint" />
+    <MESSAGE value="test for displaying entered town" />
+    <option name="LAST_COMMIT_MESSAGE" value="test for displaying entered town" />
   </component>
 </project>

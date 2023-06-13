@@ -1,7 +1,8 @@
 import Home from "./index";
-import { render, screen } from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
+import {act} from "react-dom/test-utils";
 
 describe('Weather App', () => {
     it('should have a title', () => {
@@ -29,13 +30,16 @@ describe('Weather App', () => {
     })
 
 
-    it('should display entered town when button pressed', () => {
-        render(<Home />)
+    it('should display entered town when button pressed', async () => {
 
-        userEvent.type(screen.queryByText('Enter Town'), 'Manchester')
-        userEvent.click(screen.getByText('Go'));
+        render(<Home/>)
 
-        expect(screen.getByText('Manchester')).toBeInTheDocument();
+        await act(() => {
+            userEvent.type(screen.getByPlaceholderText('textbox'), 'a');
+            userEvent.click(screen.getByText('Go'));
+        });
+
+        expect(screen.getByText("a")).toBeInTheDocument();
     })
 
 });
