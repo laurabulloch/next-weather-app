@@ -31,12 +31,12 @@ describe('Weather App', () => {
 
 
     it('should display entered town when button pressed', async () => {
-
         render(<Home/>)
 
-        await act(() => {
-            userEvent.type(screen.getByPlaceholderText('textbox'), 'a');
-            userEvent.click(screen.getByText('Go'));
+        await userEvent.type(screen.getByRole('textbox'), 'a');
+
+        await act(async() => {
+            await userEvent.click(screen.getByRole('button', {name: 'Go'}));
         });
 
         expect(screen.getByText("a")).toBeInTheDocument();
