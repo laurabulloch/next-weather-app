@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686668555878</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test passes">
+      <created>1686669338851</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686669338851</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +183,7 @@
     <MESSAGE value="added ESLint" />
     <MESSAGE value="test for displaying entered town" />
     <MESSAGE value="test for not working but entered town is displayed" />
-    <option name="LAST_COMMIT_MESSAGE" value="test for not working but entered town is displayed" />
+    <MESSAGE value="test passes" />
+    <option name="LAST_COMMIT_MESSAGE" value="test passes" />
   </component>
 </project>
