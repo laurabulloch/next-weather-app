@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,31 +28,27 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2R96GsJw0vhxll12J4UbZ1hHkyy" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "/Users/laurabulloch/WebstormProjects/next-weather-app/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/laurabulloch/WebstormProjects/next-weather-app/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Jest.Weather App.should display entered town when button pressed">
+}</component>
+  <component name="RunManager" selected="Jest.Weather App">
     <configuration name="Weather App" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -62,20 +59,6 @@
       <test-file value="$PROJECT_DIR$/pages/index.test.js" />
       <test-names>
         <test-name value="Weather App" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Weather App.should display entered town when button pressed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/pages/index.test.js" />
-      <test-names>
-        <test-name value="Weather App" />
-        <test-name value="should display entered town when button pressed" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -109,11 +92,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Weather App.should display entered town when button pressed" />
         <item itemvalue="Jest.Weather App" />
         <item itemvalue="Jest.Weather App.should display input box" />
         <item itemvalue="Jest.Weather App.should have a title" />
-        <item itemvalue="Jest.Weather App" />
       </list>
     </recent_temporary>
   </component>
@@ -126,6 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686649857354</updated>
       <workItem from="1686649859772" duration="2989000" />
+      <workItem from="1686652880414" duration="571000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -148,42 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1686652539622</updated>
     </task>
-    <task id="LOCAL-00004" summary="test for displaying entered town">
-      <created>1686655025257</created>
+    <task id="LOCAL-00004" summary="add tests for UI components">
+      <created>1686652944745</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1686655025257</updated>
+      <updated>1686652944745</updated>
     </task>
-    <task id="LOCAL-00005" summary="test for not working but entered town is displayed">
-      <created>1686668555877</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1686668555878</updated>
-    </task>
-    <task id="LOCAL-00006" summary="test passes">
-      <created>1686669338851</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1686669338851</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add test file" />
     <MESSAGE value="added jest configs" />
     <MESSAGE value="add tests for UI components" />
-    <MESSAGE value="added ESLint" />
-    <MESSAGE value="test for displaying entered town" />
-    <MESSAGE value="test for not working but entered town is displayed" />
-    <MESSAGE value="test passes" />
-    <option name="LAST_COMMIT_MESSAGE" value="test passes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests for UI components" />
   </component>
 </project>
