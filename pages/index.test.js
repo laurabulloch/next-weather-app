@@ -1,6 +1,8 @@
 import Home from "./index";
-import { render, screen } from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
+import userEvent from '@testing-library/user-event';
+import {act} from "react-dom/test-utils";
 
 describe('Weather App', () => {
     it('should have a title', () => {
@@ -25,6 +27,19 @@ describe('Weather App', () => {
         render(<Home />)
 
         expect(screen.getByRole('button')).toBeInTheDocument()
+    })
+
+
+    it('should display entered town when button pressed', async () => {
+        render(<Home/>)
+
+        await userEvent.type(screen.getByRole('textbox'), 'a');
+
+        await act(async() => {
+            await userEvent.click(screen.getByRole('button', {name: 'Go'}));
+        });
+
+        expect(screen.getByText("a")).toBeInTheDocument();
     })
 
 });
