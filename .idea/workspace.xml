@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/location.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +131,7 @@
       <updated>1686649857354</updated>
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
-      <workItem from="1686683891406" duration="2646000" />
+      <workItem from="1686683891406" duration="3589000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -181,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686735678392</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update workspace.xml">
+      <created>1686739573655</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686739573655</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +212,7 @@
     <MESSAGE value="add tests for UI components" />
     <MESSAGE value="resolve conflicts" />
     <MESSAGE value="New directory for tests to solve build issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="New directory for tests to solve build issues" />
+    <MESSAGE value="update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace.xml" />
   </component>
 </project>
