@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import {useState} from "react";
+import Link from "next/link";
 
 export default function Home() {
     const [currentTown, setCurrentTown] = useState('');
@@ -33,7 +34,9 @@ export default function Home() {
                   value = {enteredTown}
                   onChange = {(event) => setEnteredTown(event.target.value)}
               />
-              <button id="btn" onClick={handleSearch}>Go</button>
+               <Link href="/location">
+                   <button id="btn" onClick={handleSearch}>Go</button>
+               </Link>
           </div>
 
           <p className={styles.description}>
