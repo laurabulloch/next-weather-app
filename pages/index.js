@@ -4,11 +4,8 @@ import {useState} from "react";
 import Link from "next/link";
 
 export default function Home() {
-    const [currentTown, setCurrentTown] = useState('');
     const [enteredTown, setEnteredTown] = useState('');
-    const handleSearch = () => {
-        setCurrentTown(enteredTown)
-    };
+
   return (
     <div className={styles.container}>
 
@@ -34,15 +31,16 @@ export default function Home() {
                   value = {enteredTown}
                   onChange = {(event) => setEnteredTown(event.target.value)}
               />
-               <Link href="/location">
-                   <button id="btn" onClick={handleSearch}>Go</button>
+               <Link href={{
+                   pathname: "/location",
+                   query: {
+                       search: enteredTown
+                   }
+               }}
+               >
+                   <button id="btn">Go</button>
                </Link>
           </div>
-
-          <p className={styles.description}>
-              {currentTown}
-          </p>
-
 
       </main>
       </div>

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/__test__/location.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/location.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,7 @@
       <updated>1686649857354</updated>
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
-      <workItem from="1686683891406" duration="4219000" />
+      <workItem from="1686683891406" duration="6270000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -196,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686740779384</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add links between index and location page">
+      <created>1686741465806</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686741465806</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +230,7 @@
     <MESSAGE value="New directory for tests to solve build issues" />
     <MESSAGE value="update workspace.xml" />
     <MESSAGE value="add location page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add location page" />
+    <MESSAGE value="add links between index and location page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add links between index and location page" />
   </component>
 </project>
