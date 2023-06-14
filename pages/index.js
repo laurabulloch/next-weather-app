@@ -6,6 +6,7 @@ import Link from "next/link";
 export default function Home() {
     const [enteredTown, setEnteredTown] = useState('');
 
+
   return (
     <div className={styles.container}>
 
