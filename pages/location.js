@@ -12,7 +12,7 @@ export default function Location() {
         //     setToDos(response.data);
         // });
         try {
-            const res = fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + currentTown + "&limit=1&appid=1e98395ba0fddf8081b39c2bbb20ecb1")
+            const res = fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + currentTown + "&limit=1&appid=12345")
                 .then(response => response.json())
                 .then(data => console.log(data))
         } catch (err) {
