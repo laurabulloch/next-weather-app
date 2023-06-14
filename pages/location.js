@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { useSearchParams } from 'next/navigation'
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 export default function Location() {
+    const [data, setData] = useState('');
     const searchParams = useSearchParams();
     const currentTown = searchParams.get('search');
 
@@ -11,10 +12,11 @@ export default function Location() {
         // axios.get(process.env.REACT_APP_API_URL + '/to-dos').then((response) => {
         //     setToDos(response.data);
         // });
+        console.log(process.env.WEATHER_API_KEY);
         try {
-            const res = fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + currentTown + "&limit=1&appid=1e98395ba0fddf8081b39c2bbb20ecb1")
+            const res = fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + currentTown + "&limit=1&appid=" + process.env.WEATHER_API_KEY)
                 .then(response => response.json())
-                .then(data => console.log(data))
+                .then(data => setData(data))
         } catch (err) {
             console.log(err);
         }
