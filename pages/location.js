@@ -12,9 +12,9 @@ export default function Location() {
         // axios.get(process.env.REACT_APP_API_URL + '/to-dos').then((response) => {
         //     setToDos(response.data);
         // });
-        console.log(process.env.WEATHER_API_KEY);
+        console.log(process.env.REACT_APP_WEATHER_API_KEY);
         try {
-            const res = fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + currentTown + "&limit=1&appid=" + process.env.WEATHER_API_KEY)
+            const res = fetch("http://api.openweathermap.org/geo/1.0/direct?q=" + currentTown + "&limit=1&appid=" + process.env.REACT_APP_WEATHER_API_KEY)
                 .then(response => response.json())
                 .then(data => setData(data))
         } catch (err) {
