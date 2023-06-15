@@ -48,7 +48,7 @@ export default function Location() {
             <h1>{currentTown}</h1>
             <h2>The temperature is currently {Math.round(temperature)} &deg;C</h2>
             <h2>
-                <Link href="/">Search again</Link>
+                <Link href="/">Search another location</Link>
             </h2>
         </>
     );
