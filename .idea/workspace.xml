@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="change API name">
+    <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/location.js" afterDir="false" />
@@ -132,7 +132,7 @@
       <updated>1686649857354</updated>
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
-      <workItem from="1686683891406" duration="24288000" />
+      <workItem from="1686683891406" duration="27092000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -246,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686759837401</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="get lat and longitude from API">
+      <created>1686836155302</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686836155302</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +285,7 @@
     <MESSAGE value="add .env to gitignore" />
     <MESSAGE value="change .env to .env.local" />
     <MESSAGE value="change API name" />
-    <option name="LAST_COMMIT_MESSAGE" value="change API name" />
+    <MESSAGE value="get lat and longitude from API" />
+    <option name="LAST_COMMIT_MESSAGE" value="get lat and longitude from API" />
   </component>
 </project>
