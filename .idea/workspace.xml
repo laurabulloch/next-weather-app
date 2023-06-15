@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
+    <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="change wording of display">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/location.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +131,7 @@
       <updated>1686649857354</updated>
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
-      <workItem from="1686683891406" duration="2646000" />
+      <workItem from="1686683891406" duration="30172000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -181,7 +182,105 @@
       <option name="project" value="LOCAL" />
       <updated>1686735678392</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update workspace.xml">
+      <created>1686739573655</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686739573655</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add location page">
+      <created>1686740779384</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686740779384</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add links between index and location page">
+      <created>1686741465806</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686741465806</updated>
+    </task>
+    <task id="LOCAL-00011" summary="pass variables between pages using Link">
+      <created>1686752140564</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686752140564</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add useEffect to call API">
+      <created>1686757064844</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686757064844</updated>
+    </task>
+    <task id="LOCAL-00013" summary="API Key issues">
+      <created>1686759018882</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686759018882</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add .env to gitignore">
+      <created>1686759203856</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686759203856</updated>
+    </task>
+    <task id="LOCAL-00015" summary="change .env to .env.local">
+      <created>1686759284301</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686759284301</updated>
+    </task>
+    <task id="LOCAL-00016" summary="change API name">
+      <created>1686759837401</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686759837401</updated>
+    </task>
+    <task id="LOCAL-00017" summary="get lat and longitude from API">
+      <created>1686836155302</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686836155302</updated>
+    </task>
+    <task id="LOCAL-00018" summary="displays lat and lon on location page">
+      <created>1686839343644</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686839343644</updated>
+    </task>
+    <task id="LOCAL-00019" summary="display temperature">
+      <created>1686840375651</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686840375651</updated>
+    </task>
+    <task id="LOCAL-00020" summary="display correct temperature">
+      <created>1686842325096</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686842325096</updated>
+    </task>
+    <task id="LOCAL-00021" summary="change wording of display">
+      <created>1686842640119</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686842640119</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +303,20 @@
     <MESSAGE value="add tests for UI components" />
     <MESSAGE value="resolve conflicts" />
     <MESSAGE value="New directory for tests to solve build issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="New directory for tests to solve build issues" />
+    <MESSAGE value="update workspace.xml" />
+    <MESSAGE value="add location page" />
+    <MESSAGE value="add links between index and location page" />
+    <MESSAGE value="pass variables between pages using Link" />
+    <MESSAGE value="Add useEffect to call API" />
+    <MESSAGE value="API Key issues" />
+    <MESSAGE value="add .env to gitignore" />
+    <MESSAGE value="change .env to .env.local" />
+    <MESSAGE value="change API name" />
+    <MESSAGE value="get lat and longitude from API" />
+    <MESSAGE value="displays lat and lon on location page" />
+    <MESSAGE value="display temperature" />
+    <MESSAGE value="display correct temperature" />
+    <MESSAGE value="change wording of display" />
+    <option name="LAST_COMMIT_MESSAGE" value="change wording of display" />
   </component>
 </project>
