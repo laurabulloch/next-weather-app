@@ -7,7 +7,8 @@ export default function Location() {
     const searchParams = useSearchParams();
     const currentTown = searchParams.get('search');
     const [lat, setLat] = useState(0);
-    const [lon, setLon] = useState(0)
+    const [lon, setLon] = useState(0);
+    const [temperature, setTemperature] = useState(0);
 
     // useEffect(() => {
     //     try {
@@ -43,15 +44,23 @@ export default function Location() {
             setLat(latitude);
         };
 
-        // async function fetchWeather(lat, lon) {
-        //     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
-        //     if (!response.ok) {
-        //         // This will activate the closest `error.js` Error Boundary
-        //         throw new Error('Failed to fetch weather data')
-        //     }
-        //     return response.json();
-        //
-        // }
+        async function fetchWeather() {
+            const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
+            if (!response.ok) {
+                // This will activate the closest `error.js` Error Boundary
+                throw new Error('Failed to fetch weather data')
+            }
+            return response.json();
+
+        }
+
+        const getTemperature = async () => {
+            await getLongLat();
+            const fetchedData = await fetchWeather();
+            const kelvin = fetchedData.main.temp;
+            const temperature = kelvin - 273
+            setTemperature(temperature);
+        };
 
         // const fetchTemperature = async (lat,lon) => {
         //     try {
@@ -59,17 +68,17 @@ export default function Location() {
         //         return responseData.sectors;
         //     } catch (err) {}
         // };
-        //
+
         // const fetchData = async () => {
+        //     await getLongLat();
         //     const tempLoadedContent = await fetchLocation();
         //     const tempLoadedSectors = await fetchSectors(tempLoadedContent[0].id);
         //     setLoadedContent(tempLoadedContent);
         //     setLoadedSectors(tempLoadedSectors);
         // };
-        //
-        //
-        // fetchData();
-        getLongLat();
+
+
+        getTemperature();
     }, []);
 
 
@@ -78,6 +87,7 @@ export default function Location() {
             <h1>{currentTown}</h1>
             <h2>{lon}</h2>
             <h2>{lat}</h2>
+            <h2>{temperature}</h2>
             <h2>
                 <Link href="/">Search again</Link>
             </h2>

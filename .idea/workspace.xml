@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/location.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +131,7 @@
       <updated>1686649857354</updated>
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
-      <workItem from="1686683891406" duration="27092000" />
+      <workItem from="1686683891406" duration="27919000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -253,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686836155302</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="displays lat and lon on location page">
+      <created>1686839343644</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686839343644</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +292,7 @@
     <MESSAGE value="change .env to .env.local" />
     <MESSAGE value="change API name" />
     <MESSAGE value="get lat and longitude from API" />
-    <option name="LAST_COMMIT_MESSAGE" value="get lat and longitude from API" />
+    <MESSAGE value="displays lat and lon on location page" />
+    <option name="LAST_COMMIT_MESSAGE" value="displays lat and lon on location page" />
   </component>
 </project>
