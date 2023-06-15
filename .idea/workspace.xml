@@ -131,7 +131,7 @@
       <updated>1686649857354</updated>
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
-      <workItem from="1686683891406" duration="27919000" />
+      <workItem from="1686683891406" duration="29552000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -259,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686839343644</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="display temperature">
+      <created>1686840375651</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686840375651</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +300,7 @@
     <MESSAGE value="change API name" />
     <MESSAGE value="get lat and longitude from API" />
     <MESSAGE value="displays lat and lon on location page" />
-    <option name="LAST_COMMIT_MESSAGE" value="displays lat and lon on location page" />
+    <MESSAGE value="display temperature" />
+    <option name="LAST_COMMIT_MESSAGE" value="display temperature" />
   </component>
 </project>

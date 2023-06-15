@@ -10,21 +10,6 @@ export default function Location() {
     const [lon, setLon] = useState(0);
     const [temperature, setTemperature] = useState(0);
 
-    // useEffect(() => {
-    //     try {
-    //         const res = fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + currentTown + "&limit=1&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
-    //             .then(response => response.json())
-    //             .then(data =>
-    //                 setData(data)
-    //             )
-    //     } catch (err) {
-    //         console.log(err);
-    //     }
-    //     ;
-    //     console.log(data);
-    //
-    // }, []);
-
     useEffect(() => {
         async function fetchLocation() {
             const response = await fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + currentTown + "&limit=1&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
@@ -36,15 +21,9 @@ export default function Location() {
 
         }
 
-        const getLongLat = async () => {
-            const fetchedData = await fetchLocation();
-            const longitude = fetchedData[0].lon;
-            const latitude = fetchedData[0].lat;
-            setLon(longitude);
-            setLat(latitude);
-        };
-
-        async function fetchWeather() {
+        async function fetchWeather(lat, lon) {
+            console.log(lon);
+            console.log(lat);
             const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
             if (!response.ok) {
                 // This will activate the closest `error.js` Error Boundary
@@ -54,31 +33,21 @@ export default function Location() {
 
         }
 
-        const getTemperature = async () => {
-            await getLongLat();
-            const fetchedData = await fetchWeather();
+        const getData = async () => {
+            const fetchedLocationData = await fetchLocation();
+            const longitude = fetchedLocationData[0].lon;
+            const latitude = fetchedLocationData[0].lat;
+            setLon(longitude);
+            setLat(latitude);
+
+            const fetchedData = await fetchWeather(latitude, longitude);
             const kelvin = fetchedData.main.temp;
-            const temperature = kelvin - 273
+            const temperature = kelvin - 273.15
             setTemperature(temperature);
         };
 
-        // const fetchTemperature = async (lat,lon) => {
-        //     try {
-        //         //...
-        //         return responseData.sectors;
-        //     } catch (err) {}
-        // };
 
-        // const fetchData = async () => {
-        //     await getLongLat();
-        //     const tempLoadedContent = await fetchLocation();
-        //     const tempLoadedSectors = await fetchSectors(tempLoadedContent[0].id);
-        //     setLoadedContent(tempLoadedContent);
-        //     setLoadedSectors(tempLoadedSectors);
-        // };
-
-
-        getTemperature();
+        getData();
     }, []);
 
 
