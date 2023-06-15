@@ -56,7 +56,7 @@ export default function Location() {
             <h1>{currentTown}</h1>
             <h2>{lon}</h2>
             <h2>{lat}</h2>
-            <h2>{temperature}</h2>
+            <h2>The temperature today is {Math.round(temperature)} &deg;C</h2>
             <h2>
                 <Link href="/">Search again</Link>
             </h2>
