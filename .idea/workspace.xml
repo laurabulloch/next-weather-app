@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/[location].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[location].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +131,7 @@
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
       <workItem from="1686683891406" duration="30858000" />
-      <workItem from="1686924756405" duration="26581000" />
+      <workItem from="1686924756405" duration="26774000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -309,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687274500031</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="tidy ui and remove unnecessary code">
+      <created>1687276652362</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1687276652362</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +356,7 @@
     <MESSAGE value="display lon lat using useserversideprops" />
     <MESSAGE value="use params fro  index to get entered location within api fetch" />
     <MESSAGE value="get weather data from api" />
-    <option name="LAST_COMMIT_MESSAGE" value="get weather data from api" />
+    <MESSAGE value="tidy ui and remove unnecessary code" />
+    <option name="LAST_COMMIT_MESSAGE" value="tidy ui and remove unnecessary code" />
   </component>
 </project>
