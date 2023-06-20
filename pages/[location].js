@@ -22,14 +22,16 @@ import Link from "next/link";
 // //     return { props:  {dataSerialized},  };
 // // }
 //
-// // async function fetchWeather(lat, lon) {
-// //     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
-// //     if (!response.ok) {
-// //         throw new Error('Failed to fetch weather data')
-// //     }
-// //     return response.json();
-// //
-// // }
+async function fetchWeather(lat, lon) {
+    const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
+    if (!response.ok) {
+        throw new Error('Failed to fetch weather data')
+    }
+    const data = await response.json();
+
+    return data.main.temp;
+
+}
 //
 // async function getData(location){
 //
@@ -82,23 +84,30 @@ export const getServerSideProps = async ({params}) => {
         throw new Error('Failed to fetch weather data')
     }
     const data = await res.json()
+    const lat = data[0].lat;
+    const lon = data[0].lon
+
+
+    const temperature = await fetchWeather(lat, lon);
     return { props:
             {
                 locationName: data[0].name,
-                locationLat: data[0].lat,
-                locationLon: data[0].lon
+                locationLat: lat,
+                locationLon: lon,
+                locationTemp: temperature
             }
     }
 }
 
 export default function Location(props) {
+    const temperature = props.locationTemp - 273.15;
 
     return (
         <div>
             <h1>{props.locationName}</h1>
             <h1>{props.locationLat}</h1>
             <h1>{props.locationLon}</h1>
-            {/*<h2>The temperature is currently {Math.round(temperature)} &deg;C</h2>*/}
+            <h2>The temperature is currently {Math.round(temperature)} &deg;C</h2>
             <h2>
                 <Link href="/">Search another location</Link>
             </h2>
