@@ -32,9 +32,9 @@ export default function Home() {
                         onChange={(event) => setCurrentTown(event.target.value)}
                     />
                     <Link href={{
-                        pathname: "/location",
+                        pathname: "/[location]",
                         query: {
-                            search: currentTown,
+                            location: currentTown,
                         }
                     }}
                     >
