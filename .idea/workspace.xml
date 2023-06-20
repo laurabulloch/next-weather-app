@@ -132,7 +132,7 @@
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
       <workItem from="1686683891406" duration="30858000" />
-      <workItem from="1686924756405" duration="24637000" />
+      <workItem from="1686924756405" duration="26581000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -302,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687259988970</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="get weather data from api">
+      <created>1687274500031</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687274500031</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +349,7 @@
     <MESSAGE value="take out lon and lat" />
     <MESSAGE value="display lon lat using useserversideprops" />
     <MESSAGE value="use params fro  index to get entered location within api fetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="use params fro  index to get entered location within api fetch" />
+    <MESSAGE value="get weather data from api" />
+    <option name="LAST_COMMIT_MESSAGE" value="get weather data from api" />
   </component>
 </project>
