@@ -75,15 +75,13 @@ import Link from "next/link";
 // }
 
 export const getServerSideProps = async ({params}) => {
-    const {location} = params.location;
 
-    const res = await fetch("https://api.openweathermap.org/geo/1.0/direct?q=lanark&limit=1&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
+    const res = await fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + params.location + "&limit=1&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
 
     if (!res.ok) {
         throw new Error('Failed to fetch weather data')
     }
     const data = await res.json()
-    console.log(data);
     return { props:
             {
                 locationName: data[0].name,
@@ -94,7 +92,6 @@ export const getServerSideProps = async ({params}) => {
 }
 
 export default function Location(props) {
-    console.log(props.locationName)
 
     return (
         <div>
