@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/location.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +132,7 @@
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
       <workItem from="1686683891406" duration="30858000" />
+      <workItem from="1686924756405" duration="32687000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -287,7 +288,42 @@
       <option name="project" value="LOCAL" />
       <updated>1686842962999</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="display lon lat using useserversideprops">
+      <created>1687259780956</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1687259780956</updated>
+    </task>
+    <task id="LOCAL-00024" summary="use params fro  index to get entered location within api fetch">
+      <created>1687259988970</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1687259988970</updated>
+    </task>
+    <task id="LOCAL-00025" summary="get weather data from api">
+      <created>1687274500031</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687274500031</updated>
+    </task>
+    <task id="LOCAL-00026" summary="tidy ui and remove unnecessary code">
+      <created>1687276652362</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1687276652362</updated>
+    </task>
+    <task id="LOCAL-00027" summary="remove _app.js as it only changed formatting">
+      <created>1687276765446</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1687276765446</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +361,11 @@
     <MESSAGE value="display correct temperature" />
     <MESSAGE value="change wording of display" />
     <MESSAGE value="take out lon and lat" />
-    <option name="LAST_COMMIT_MESSAGE" value="take out lon and lat" />
+    <MESSAGE value="display lon lat using useserversideprops" />
+    <MESSAGE value="use params fro  index to get entered location within api fetch" />
+    <MESSAGE value="get weather data from api" />
+    <MESSAGE value="tidy ui and remove unnecessary code" />
+    <MESSAGE value="remove _app.js as it only changed formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove _app.js as it only changed formatting" />
   </component>
 </project>
