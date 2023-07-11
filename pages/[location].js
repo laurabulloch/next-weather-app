@@ -18,8 +18,8 @@ export const getServerSideProps = async ({params}) => {
     }
     const data = await res.json()
 
-    const lat = data[0].lat;
-    const lon = data[0].lon;
+    const lat = await data[0].lat;
+    const lon = await data[0].lon;
 
     const temperature = await fetchWeather(lat, lon);
 
