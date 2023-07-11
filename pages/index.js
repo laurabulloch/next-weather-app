@@ -20,10 +20,10 @@ export default function Home() {
                 </h1>
 
                 <p className={styles.description}>
-                    Get started by typing a town into the search box below
+                    Get started by typing a town into the search box below.
                 </p>
 
-                <div>
+                <div className={styles.search}>
                     <input
                         type="text"
                         id="location"

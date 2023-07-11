@@ -29,7 +29,8 @@
 }
 
 .title,
-.description {
+.description,
+.search {
   text-align: center;
 }
 

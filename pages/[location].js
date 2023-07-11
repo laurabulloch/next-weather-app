@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from '../styles/Home.module.css';
 
 async function fetchWeather(lat, lon) {
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
