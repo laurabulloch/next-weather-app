@@ -315,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689761211365</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add in city in head tag">
+      <created>1689761827682</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1689761827683</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +363,7 @@
     <MESSAGE value="await to lon and lat variable assignment" />
     <MESSAGE value="center the text box" />
     <MESSAGE value="change background colour" />
-    <option name="LAST_COMMIT_MESSAGE" value="change background colour" />
+    <MESSAGE value="add in city in head tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="add in city in head tag" />
   </component>
 </project>

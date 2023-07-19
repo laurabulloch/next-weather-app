@@ -7,9 +7,8 @@ async function fetchWeather(lat, lon) {
     if (!response.ok) {
         throw new Error('Failed to fetch weather data')
     }
-    const data = await response.json();
+    return await response.json();
 
-    return data.main.temp;
 }
 
 export const getServerSideProps = async ({params}) => {
@@ -23,21 +22,20 @@ export const getServerSideProps = async ({params}) => {
     const lat = await data[0].lat;
     const lon = await data[0].lon;
 
-    const temperature = await fetchWeather(lat, lon);
+    const weatherData = await fetchWeather(lat, lon);
 
     return { props:
             {
                 locationName: params.location,
                 locationLat: lat,
                 locationLon: lon,
-                locationTemp: temperature,
-                locationData: data,
+                locationWeather: weatherData,
             }
     }
 }
 
 export default function Location(props) {
-    const temperature = props.locationTemp - 273.15;
+    const temperature = props.locationWeather.main.temp - 273.15;
 
     return (
         <div className={styles.container}>
@@ -48,6 +46,12 @@ export default function Location(props) {
 
             <h1>{props.locationName}</h1>
             <h2>The temperature is currently {Math.round(temperature)} &deg;C</h2>
+
+            <h2>
+                <span>{(props.locationWeather.main.temp_max.toFixed(0))- 273}&deg;C</span>
+                <span>{(props.locationWeather.main.temp_min.toFixed(0))-273}&deg;C</span>
+            </h2>
+
             <h2>
                 <Link href="/">Search another location</Link>
             </h2>
