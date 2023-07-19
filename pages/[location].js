@@ -59,27 +59,27 @@ export default function Location(props) {
             </h3>
             <div >
                 <div>
-                    <span>Sunrise</span>
+                    <span style={{fontWeight:"bold"}}>Sunrise </span>
                     <span>
                 {moment.unix(props.locationWeather.sys.sunrise).tz(timezone).format("LT")}
               </span>
                 </div>
 
                 <div>
-                    <span>Sunset</span>
+                    <span style={{fontWeight:"bold"}}>Sunset </span>
                     <span>
                 {moment.unix(props.locationWeather.sys.sunset).tz(timezone).format("LT")}
               </span>
                 </div>
                 <div>
-                    <span>Humidity</span>
+                    <span style={{fontWeight:"bold"}}>Humidity </span>
                     <span>
                 {props.locationWeather.main.humidity} %
               </span>
                 </div>
 
                 <div>
-                    <span>Wind Speed</span>
+                    <span style={{fontWeight:"bold"}}>Wind Speed </span>
                     <span>
                 {props.locationWeather.wind.speed} m/s
               </span>
