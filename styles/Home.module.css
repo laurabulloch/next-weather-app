@@ -1,14 +1,16 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #87CEEB;
 }
 
+
 .title a {
-  color: #0070f3;
+  color: #0031f3;
   text-decoration: none;
 }
 
