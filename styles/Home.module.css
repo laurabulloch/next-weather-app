@@ -86,6 +86,12 @@
   height: 1em;
 }
 
+.capitalizefirst {
+  text-transform: lowercase;
+}
+.capitalizeFirst::first-letter {
+  text-transform: uppercase;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

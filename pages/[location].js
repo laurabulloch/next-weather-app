@@ -49,25 +49,30 @@ export default function Location(props) {
             </Head>
 
             <h1>{props.locationName}</h1>
-            <h2>The temperature is currently {Math.round(temperature)} &deg;C</h2>
+            <h3> {new Date().toLocaleString("en-US", {  weekday: 'long', day: 'numeric', month: 'long'})} </h3>
+            <h1>{Math.round(temperature)} &deg;C</h1>
 
-            <h2>
-                <span>{(props.locationWeather.main.temp_max.toFixed(0))- 273}&deg;C</span>
+            <h3>
+                <span>{(props.locationWeather.main.temp_max.toFixed(0))- 273} / </span>
                 <span>{(props.locationWeather.main.temp_min.toFixed(0))-273}&deg;C</span>
 
-                <span>{moment.unix(props.locationWeather.sys.sunrise).tz(timezone).format("LT")}</span>
-                <span>{moment.unix(props.locationWeather.sys.sunset).tz(timezone).format("LT")}</span>
-            </h2>
+            </h3>
+            <span>{moment.unix(props.locationWeather.sys.sunrise).tz(timezone).format("LT")}</span>
+            <span>{moment.unix(props.locationWeather.sys.sunset).tz(timezone).format("LT")}</span>
+
             <Image
-                src={`https://openweathermap.org/img/w/${props.locationWeather.weather[0].icon}.png`}
+                src={`https://openweathermap.org/img/wn/${props.locationWeather.weather[0].icon}.png`}
                 alt="Weather Icon"
                 width={150}
                 height={150}
+                onError={"Couldnt load image"}
             />
 
-            <h3>
+            <h3 className={styles.capitalizeFirst}>{props.locationWeather.weather[0].description}</h3>
+
+            <h4>
                 <Link href="/">Search another location</Link>
-            </h3>
+            </h4>
         </div>
         )
 }
