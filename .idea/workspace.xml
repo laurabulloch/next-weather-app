@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/[location].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[location].js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689759168832</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="change background colour">
+      <created>1689761211365</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1689761211365</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +355,7 @@
     <MESSAGE value="take out lon and lat" />
     <MESSAGE value="await to lon and lat variable assignment" />
     <MESSAGE value="center the text box" />
-    <option name="LAST_COMMIT_MESSAGE" value="center the text box" />
+    <MESSAGE value="change background colour" />
+    <option name="LAST_COMMIT_MESSAGE" value="change background colour" />
   </component>
 </project>

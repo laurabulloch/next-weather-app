@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from '../styles/Home.module.css';
+import Head from "next/head";
 
 async function fetchWeather(lat, lon) {
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
@@ -29,7 +30,8 @@ export const getServerSideProps = async ({params}) => {
                 locationName: params.location,
                 locationLat: lat,
                 locationLon: lon,
-                locationTemp: temperature
+                locationTemp: temperature,
+                locationData: data,
             }
     }
 }
@@ -38,7 +40,12 @@ export default function Location(props) {
     const temperature = props.locationTemp - 273.15;
 
     return (
-        <div>
+        <div className={styles.container}>
+            <Head>
+                <title>{props.locationName} Next Weather App</title>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
+
             <h1>{props.locationName}</h1>
             <h2>The temperature is currently {Math.round(temperature)} &deg;C</h2>
             <h2>
