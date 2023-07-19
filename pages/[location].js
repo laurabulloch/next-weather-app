@@ -44,11 +44,11 @@ export default function Location(props) {
     return (
         <div className={styles.container}>
             <Head>
-                <title>{props.locationName} Next Weather App</title>
+                <title >{props.locationName} Next Weather App</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <h1>{props.locationName}</h1>
+            <h1 className={styles.capitalizeFirst}>{props.locationName}</h1>
             <h3> {new Date().toLocaleString("en-US", {  weekday: 'long', day: 'numeric', month: 'long'})} </h3>
             <h1>{Math.round(temperature)} &deg;C</h1>
 
