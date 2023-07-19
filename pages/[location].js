@@ -60,13 +60,15 @@ export default function Location(props) {
             <span>{moment.unix(props.locationWeather.sys.sunrise).tz(timezone).format("LT")}</span>
             <span>{moment.unix(props.locationWeather.sys.sunset).tz(timezone).format("LT")}</span>
 
-            <Image
-                src={`https://openweathermap.org/img/wn/${props.locationWeather.weather[0].icon}.png`}
-                alt="Weather Icon"
-                width={150}
-                height={150}
-                onError={"Couldnt load image"}
-            />
+            <div>
+                <Image
+                    src={`https://openweathermap.org/img/wn/${props.locationWeather.weather[0].icon}@2x.png`}
+                    alt="Weather Icon"
+                    width={150}
+                    height={150}
+                    onError={"Couldnt load image"}
+                />
+            </div>
 
             <h3 className={styles.capitalizeFirst}>{props.locationWeather.weather[0].description}</h3>
 
