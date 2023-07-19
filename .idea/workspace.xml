@@ -132,7 +132,7 @@
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
       <workItem from="1686683891406" duration="30858000" />
-      <workItem from="1689777389755" duration="389000" />
+      <workItem from="1689777389755" duration="1114000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -344,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689777711319</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="change to have image within div">
+      <created>1689777973705</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1689777973705</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +369,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add tests for UI components" />
     <MESSAGE value="resolve conflicts" />
     <MESSAGE value="New directory for tests to solve build issues" />
     <MESSAGE value="update workspace.xml" />
@@ -387,6 +393,7 @@
     <MESSAGE value="add in min and max temperature" />
     <MESSAGE value="show sunride, sunset and image of current weather" />
     <MESSAGE value="image showing, humidity and wind speed" />
-    <option name="LAST_COMMIT_MESSAGE" value="image showing, humidity and wind speed" />
+    <MESSAGE value="change to have image within div" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to have image within div" />
   </component>
 </project>

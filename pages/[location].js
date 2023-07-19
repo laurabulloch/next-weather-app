@@ -57,8 +57,34 @@ export default function Location(props) {
                 <span>{(props.locationWeather.main.temp_min.toFixed(0))-273}&deg;C</span>
 
             </h3>
-            <span>{moment.unix(props.locationWeather.sys.sunrise).tz(timezone).format("LT")}</span>
-            <span>{moment.unix(props.locationWeather.sys.sunset).tz(timezone).format("LT")}</span>
+            <div >
+                <div>
+                    <span>Sunrise</span>
+                    <span>
+                {moment.unix(props.locationWeather.sys.sunrise).tz(timezone).format("LT")}
+              </span>
+                </div>
+
+                <div>
+                    <span>Sunset</span>
+                    <span>
+                {moment.unix(props.locationWeather.sys.sunset).tz(timezone).format("LT")}
+              </span>
+                </div>
+                <div>
+                    <span>Humidity</span>
+                    <span>
+                {props.locationWeather.main.humidity} %
+              </span>
+                </div>
+
+                <div>
+                    <span>Wind Speed</span>
+                    <span>
+                {props.locationWeather.wind.speed} m/s
+              </span>
+                </div>
+            </div>
 
             <div>
                 <Image
