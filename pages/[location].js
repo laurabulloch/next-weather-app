@@ -1,14 +1,17 @@
 import Link from "next/link";
 import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import moment from "moment-timezone";
+import React from "react";
+import Image from "next/image";
 
 async function fetchWeather(lat, lon) {
     const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=" + process.env.NEXT_PUBLIC_WEATHER_API_KEY)
     if (!response.ok) {
         throw new Error('Failed to fetch weather data')
     }
-    const data = await response.json();
+    return await response.json();
 
-    return data.main.temp;
 }
 
 export const getServerSideProps = async ({params}) => {
@@ -22,28 +25,82 @@ export const getServerSideProps = async ({params}) => {
     const lat = await data[0].lat;
     const lon = await data[0].lon;
 
-    const temperature = await fetchWeather(lat, lon);
+    const weatherData = await fetchWeather(lat, lon);
 
     return { props:
             {
                 locationName: params.location,
                 locationLat: lat,
                 locationLon: lon,
-                locationTemp: temperature
+                locationWeather: weatherData,
             }
     }
 }
 
 export default function Location(props) {
-    const temperature = props.locationTemp - 273.15;
+    const temperature = props.locationWeather.main.temp - 273.15;
+    const timezone = props.locationWeather.timezone.toString();
 
     return (
-        <div>
-            <h1>{props.locationName}</h1>
-            <h2>The temperature is currently {Math.round(temperature)} &deg;C</h2>
-            <h2>
+        <div className={styles.container}>
+            <Head>
+                <title >{props.locationName} Next Weather App</title>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
+
+            <h1 className={styles.capitalizeFirst}>{props.locationName}</h1>
+            <h3> {new Date().toLocaleString("en-US", {  weekday: 'long', day: 'numeric', month: 'long'})} </h3>
+            <h1>{Math.round(temperature)} &deg;C</h1>
+
+            <h3>
+                <span>{(props.locationWeather.main.temp_max.toFixed(0))- 273} / </span>
+                <span>{(props.locationWeather.main.temp_min.toFixed(0))-273}&deg;C</span>
+
+            </h3>
+            <div >
+                <div>
+                    <span style={{fontWeight:"bold"}}>Sunrise </span>
+                    <span>
+                {moment.unix(props.locationWeather.sys.sunrise).tz(timezone).format("LT")}
+              </span>
+                </div>
+
+                <div>
+                    <span style={{fontWeight:"bold"}}>Sunset </span>
+                    <span>
+                {moment.unix(props.locationWeather.sys.sunset).tz(timezone).format("LT")}
+              </span>
+                </div>
+                <div>
+                    <span style={{fontWeight:"bold"}}>Humidity </span>
+                    <span>
+                {props.locationWeather.main.humidity} %
+              </span>
+                </div>
+
+                <div>
+                    <span style={{fontWeight:"bold"}}>Wind Speed </span>
+                    <span>
+                {props.locationWeather.wind.speed} m/s
+              </span>
+                </div>
+            </div>
+
+            <div>
+                <Image
+                    src={`https://openweathermap.org/img/wn/${props.locationWeather.weather[0].icon}@2x.png`}
+                    alt="Weather Icon"
+                    width={150}
+                    height={150}
+                    onError={"Couldnt load image"}
+                />
+            </div>
+
+            <h3 className={styles.capitalizeFirst}>{props.locationWeather.weather[0].description}</h3>
+
+            <h4>
                 <Link href="/">Search another location</Link>
-            </h2>
+            </h4>
         </div>
         )
 }

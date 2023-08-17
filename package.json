@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@testing-library/user-event": "^14.4.3",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"

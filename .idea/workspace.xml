@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7eeb5d6a-3739-4c31-b0b1-eb7ed736ecca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/[location].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/[location].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="change_request_style" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,6 +133,7 @@
       <workItem from="1686649859772" duration="2989000" />
       <workItem from="1686652880414" duration="571000" />
       <workItem from="1686683891406" duration="30858000" />
+      <workItem from="1689777389755" duration="2218000" />
     </task>
     <task id="LOCAL-00001" summary="Add test file">
       <created>1686650027597</created>
@@ -300,7 +303,63 @@
       <option name="project" value="LOCAL" />
       <updated>1689086975887</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="center the text box">
+      <created>1689759168832</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1689759168832</updated>
+    </task>
+    <task id="LOCAL-00026" summary="change background colour">
+      <created>1689761211365</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1689761211365</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add in city in head tag">
+      <created>1689761827682</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1689761827683</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add in min and max temperature">
+      <created>1689762705462</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1689762705462</updated>
+    </task>
+    <task id="LOCAL-00029" summary="show sunride, sunset and image of current weather">
+      <created>1689765438082</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1689765438082</updated>
+    </task>
+    <task id="LOCAL-00030" summary="image showing, humidity and wind speed">
+      <created>1689777711319</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1689777711319</updated>
+    </task>
+    <task id="LOCAL-00031" summary="change to have image within div">
+      <created>1689777973705</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1689777973705</updated>
+    </task>
+    <task id="LOCAL-00032" summary="change formatting">
+      <created>1689779078383</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1689779078383</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,10 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add test file" />
-    <MESSAGE value="added jest configs" />
-    <MESSAGE value="add tests for UI components" />
-    <MESSAGE value="resolve conflicts" />
     <MESSAGE value="New directory for tests to solve build issues" />
     <MESSAGE value="update workspace.xml" />
     <MESSAGE value="add location page" />
@@ -340,6 +395,13 @@
     <MESSAGE value="take out lon and lat" />
     <MESSAGE value="await to lon and lat variable assignment" />
     <MESSAGE value="center the text box" />
-    <option name="LAST_COMMIT_MESSAGE" value="center the text box" />
+    <MESSAGE value="change background colour" />
+    <MESSAGE value="add in city in head tag" />
+    <MESSAGE value="add in min and max temperature" />
+    <MESSAGE value="show sunride, sunset and image of current weather" />
+    <MESSAGE value="image showing, humidity and wind speed" />
+    <MESSAGE value="change to have image within div" />
+    <MESSAGE value="change formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="change formatting" />
   </component>
 </project>
